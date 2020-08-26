@@ -24,6 +24,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {Switch} from '@react-spectrum/switch';
 import {useAsyncList} from '@react-stately/data';
+import {TableAndDialog} from './TableAndDialog';
 
 let columns = [
   {name: 'Foo', key: 'foo'},
@@ -487,6 +488,12 @@ storiesOf('Table', module)
     'hiding columns',
     () => (
       <HidingColumns />
+    )
+  )
+  .add(
+    'table and dialog',
+    () => (
+      <TableAndDialog />
     )
   )
   .add(
